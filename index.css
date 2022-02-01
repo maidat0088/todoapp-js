@@ -1,0 +1,162 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo {
+  max-width: 700px;
+  min-height: 135px;
+  width: 480px;
+  height: 400px;
+  padding: 32px 34px 25px;
+  border: 2px solid black;
+  font-family: "Tahoma", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  background-color: #ffffff;
+}
+
+.todo__title {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 33px;
+}
+
+.todo__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.todo__control input {
+  height: 36px;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.todo__control input::-webkit-input-placeholder {
+  color: #000000;
+  font-weight: normal;
+  font-family: "Tahoma", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.todo__control input:-ms-input-placeholder {
+  color: #000000;
+  font-weight: normal;
+  font-family: "Tahoma", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.todo__control input::-ms-input-placeholder {
+  color: #000000;
+  font-weight: normal;
+  font-family: "Tahoma", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.todo__control input::placeholder {
+  color: #000000;
+  font-weight: normal;
+  font-family: "Tahoma", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.todo__control button {
+  height: 36px;
+  width: 100px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.todo__details {
+  margin-top: 20px;
+  overflow-y: auto;
+  min-height: 35px;
+  max-height: 225px;
+  border: 2px solid black;
+}
+
+.todo__details .complete {
+  background-color: #bfbfbf;
+}
+
+.todo__details .complete span {
+  text-decoration: line-through !important;
+}
+
+.todo__details .complete i {
+  visibility: unset !important;
+}
+
+.todo__details > div:first-child {
+  border-top: none;
+}
+
+.todo__details__task {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 2px solid black;
+}
+
+.todo__details__task > div:first-child {
+  cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.todo__details__task > div:first-child > i {
+  padding: 0 5px;
+  visibility: hidden;
+}
+
+.todo__details__task__name {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.todo__details__task button {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #7790a0;
+}
+/*# sourceMappingURL=index.css.map */

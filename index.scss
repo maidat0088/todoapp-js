@@ -1,0 +1,126 @@
+$border-style: 2px solid #000000;
+$font-family-sans-serif: -apple-system;
+$todo-background-color : #ffffff;
+$primary_font_family: 'Tahoma', sans-serif;
+$primary_font_size: 13px;
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    max-width: 700px;
+    min-height: 135px;
+    width: 480px;
+    height: 400px;
+    padding: 32px 34px 25px;
+    border: $border-style;
+    font-family: $primary_font_family;
+    font-weight: normal;
+    font-size: $primary_font_size;
+    background-color: #ffffff;
+
+    &__title {
+     
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 33px;
+    }
+
+    &__control {
+        $control-height: 36px;
+        $control-border-radius: 5px;
+
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            width: 300px;
+            border: $border-style;
+            border-radius: $control-border-radius;
+
+            &::placeholder {
+                color: #000000;
+                font-weight: normal;
+                font-family: $primary_font_family;
+                font-weight: normal;
+                font-size: $primary_font_size;
+            }
+        }
+
+        button {
+            height: $control-height;
+            width: 100px;
+            border: $border-style;       text-transform: uppercase;
+            border-radius: $control-border-radius;
+            background-color: #ffffff;
+            cursor: pointer;
+        }
+    }
+
+    &__details {
+        margin-top: 20px;
+        overflow-y: auto;
+        min-height: 35px;
+        max-height: 225px;
+        border: $border-style;
+
+        .complete {
+            background-color: #bfbfbf;
+
+            span {
+                text-decoration: line-through !important;
+            }
+
+            i {
+                visibility: unset !important ;
+            }
+        }   
+        
+        & > div:first-child {
+            border-top: none;
+        }
+
+        &__task {
+            height: 40px;          
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color:#000000;
+
+            justify-content: space-between;
+            border-top: $border-style;    
+
+            & > div:first-child {
+                cursor: pointer;
+                flex-grow: 1;
+
+                & > i {
+                    padding: 0 5px;
+                    visibility: hidden;
+                }
+            }
+
+            &__name {
+                flex-grow: 1;
+            }
+
+            button {
+                border: none;
+                background: none;
+                font-size: 1rem;
+                cursor: pointer;
+                color: #7790a0;
+            }
+        }
+    }
+}
